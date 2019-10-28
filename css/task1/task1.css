@@ -1,0 +1,10 @@
+.abc{
+    background-color: orange;
+position: relative;
+    height:1px;
+    width: 30%;
+padding-top: 30%;
+float: left ;
+    margin: 1%;
+    border-radius:12px;
+}
