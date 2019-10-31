@@ -1,0 +1,42 @@
+body{
+    background: #68cdd5;
+}
+
+.all{
+    margin-top: 50px;
+}
+
+.imgone{
+    margin-left: 30px;
+}
+
+.center{
+    text-align: center;
+    margin-top: 100px;
+}
+.text{
+    text-align: center;
+    color: white;
+    margin-top: 180px;
+}
+
+.logoone{
+     float: left;
+     color: white;
+     margin-left: 22%;
+    margin-top: 250px;
+ }
+
+.logotwo{
+    float: right;
+    color: white;
+    margin-right: 22%;
+    margin-top: 250px;
+}
+
+.circle{
+    background: #009e96;
+    height: 88px;
+    width: 88px;
+    border-radius: 44px;
+}
