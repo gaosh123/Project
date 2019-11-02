@@ -1,0 +1,80 @@
+body{
+    background: #dddddd;
+    margin: 0;
+}
+.top{
+    background: #68cdd5;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#ffffff;
+    font-size: x-large;
+}
+.close{
+    margin-left: 25px;
+}
+.enter{
+}
+.post{
+    margin-right: 25px;
+ }
+.dengluanniu{
+    background: #68cdd5;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+}
+.forget{
+    height: 40px;
+    color: #68cdd5;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    font-size: large;
+    text-decoration: underline;
+}
+.import{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border: 0;
+}
+.iphone{
+    margin-left: 30px;
+    background: white;
+    margin-right: 30px;
+}
+.tel {
+    width: 90%;
+    border-top: #dddddd;
+    padding-left: 30px;
+    height: 28px;
+    border: 0;
+    border-left: 1px solid #dddddd;
+    outline: none;
+    font-size: 20px;
+}
+.lock{
+    margin-left: 30px;
+    background: white;
+    margin-right: 30px;
+ }
+.password{
+    width: 90%;
+    border-top: #dddddd;
+    padding-left: 30px;
+    height: 28px;
+    border: 0;
+    border-left: 1px solid #dddddd;
+    font-size: 20px;
+    outline: none;
+}
