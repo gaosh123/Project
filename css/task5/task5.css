@@ -22,7 +22,7 @@ body{
 }
 .img {
     height: 400px;
-    background-image: url("img/背景2.png");
+    background-image: url("img/背景.png");
     background-size: cover;
     z-index: -10;
     display: flex;
