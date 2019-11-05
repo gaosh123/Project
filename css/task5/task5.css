@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+}
+.top{
+    padding-left: 10px;
+    background: #68cdd5;
+    height: 80px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23px;
+    position:fixed;
+    top: 0px;
+    z-index: 10;
+}
+.mid {
+    height: 1300px;
+    overflow-y : scroll;
+    font-size: 21px;
+}
+.img {
+    height: 400px;
+    background-image: url("img/背景2.png");
+    background-size: cover;
+    z-index: -10;
+    display: flex;
+    align-items: center;
+}
+.man {
+    height: 95px;
+    width: 95px;
+    margin-left: 25px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.manone{
+    margin-top: 6px;
+    margin-left: 20px;
+}
+.mantwo{
+    color: white;
+    font-size: 18px;
+}
+.manthree {
+    color: white;
+    font-size: 15px;
+}
+.one{
+    width: 100%;
+    height: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-left: 4px solid#68cdd5;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.two {
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    padding-left: 59px;
+}
+.three {
+    height: 70px;
+    margin-left: 30px;
+    border-top: 1px solid#dddddd;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+}
+.threeone{
+    color: #dddddd;
+    padding-left: 30px;
+    padding-right: 22px;
+    border-right: 1px solid#dddddd;
+}
+.threetwo {
+    padding-left: 30px;
+}
+.four {
+    height: 70px;
+    margin-left: 30px;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+}
+.five {
+    height: 70px;
+    margin-left: 30px;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+}
+.priceone {
+    color: #dddddd;
+    padding-left: 30px;
+    padding-right: 15px;
+    border-right: 1px solid#dddddd;
+    min-width: 90px;
+}
+.price {
+    color: red;
+    padding-left: 30px;
+}
+.six {
+    margin-left: 30px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+}
+.sixone {
+    color: #dddddd;
+    padding-left: 30px;
+    padding-right: 15px;
+    border-right: 1px solid#dddddd;
+    min-width: 90px;
+}
+.sixtwo {
+    padding-left: 30px;
+}
+.bottom {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    z-index:200;
+    bottom:0;
+    left: 0;
+    background: white;
+}
+.message {
+    height: 70px;
+    width: 44%;
+    margin-left: 4%;
+    border: 2px solid#68cdd5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #68cdd5;
+    font-size: 25px;
+}
+.tel {
+    height: 70px;
+    width: 44%;
+    border: 2px solid#68cdd5;
+    margin-right: 4%;
+    background: #68cdd5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
