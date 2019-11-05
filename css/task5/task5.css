@@ -3,6 +3,7 @@ body{
 }
 .top{
     padding-left: 10px;
+    padding-right: 10px;
     background: #68cdd5;
     height: 80px;
     width: 100%;
@@ -11,13 +12,10 @@ body{
     justify-content: space-between;
     align-items: center;
     font-size: 23px;
-    position:fixed;
-    top: 0px;
-    z-index: 10;
 }
 .mid {
     height: 1300px;
-    overflow-y : scroll;
+
     font-size: 21px;
 }
 .img {
@@ -31,7 +29,7 @@ body{
 .man {
     height: 95px;
     width: 95px;
-    margin-left: 25px;
+    margin-left: 22px;
     background: white;
     border-radius: 50%;
     margin-right: 20px;
