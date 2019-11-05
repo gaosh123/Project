@@ -142,7 +142,7 @@ body{
     background: white;
 }
 .message {
-    height: 70px;
+    height: 50px;
     width: 44%;
     margin-left: 4%;
     border: 2px solid#68cdd5;
@@ -154,7 +154,7 @@ body{
     font-size: 25px;
 }
 .tel {
-    height: 70px;
+    height: 50px;
     width: 44%;
     border: 2px solid#68cdd5;
     margin-right: 4%;
