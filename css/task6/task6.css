@@ -45,12 +45,9 @@ main{
     border-bottom: 1px solid#dddddd;
     background: white;
 }
-
-
 .list-left{
     position: relative;
     display: inline-block;
-
     text-align: center;
     width: 32%;
     height: 40px;line-height: 40px;
@@ -80,7 +77,6 @@ main{
 .list-left-content a:hover {background: white}
 .list-left:hover .list-left-content{display: block }
 .list-left:hover .list-left-button{background: #f9f9f9}
-
 .list-center{
     position: relative;
     display: inline-block;
@@ -94,7 +90,6 @@ main{
     background: url("img/three.png") no-repeat;
     background-position-x: right;
     background-position-y: center;
-
 }
 .list-center-button{
     font-size: 17px;
@@ -118,8 +113,6 @@ main{
 .list-center-content a:hover {background: white}
 .list-center:hover .list-center-content{display: block }
 .list-center:hover .list-center-button{background: #f9f9f9}
-
-
 .list-right{
     position: relative;
     display: inline-block;
@@ -131,7 +124,6 @@ main{
     text-align: center;
     border-left: 1px solid#dddddd;
 }
-
 .list-right-button{
     font-size: 17px;
     border: none;
@@ -139,7 +131,6 @@ main{
     background-color: white;
     color: #dddddd;
 }
-
 .list-right-content{
     display: none;
     position: absolute;
@@ -155,13 +146,14 @@ main{
 .list-right-content a:hover {background: white}
 .list-right:hover .list-right-content{display: block }
 .list-right:hover .list-right-button{background: #f9f9f9}
-
 .table{
     height: 120px;
     border-bottom: 1px solid#dddddd;
 }
 .table-one-top{
     line-height: 45px;
+    display: flex;
+    align-items: center;
     margin-left: 20px;
     color: #dddddd;
 }
@@ -178,6 +170,11 @@ main{
     background-position-x: right;
     background-position-y: center;
 }
+.table-one-center-left{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 .table-one-center-right{
     color: red;
 }
@@ -186,43 +183,6 @@ main{
     margin-left: 20px;
     color: #dddddd;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .bottom{
     display: flex;
     justify-content: space-between;
