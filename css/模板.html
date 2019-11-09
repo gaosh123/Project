@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>葡萄藤PPT</title>
+
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+
+    <style>
+        .float {
+            float: left;
+        }
+
+        p.font {
+            text-align: left;
+        }
+    </style>
+
+
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ?
+            'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' : '../css/reveal/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <link rel="stylesheet" href="csstask.css">
+</head>
+
+<body>
+<img src="img/2018-11-16-A-css01/logo.png" alt="" usemap="#pttmap" class="base-logo" style="visibility: hidden">
+<map name="pttmap">
+    <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com/" alt="" target="_blank">
+</map>
+<div class="reveal slide center" role="application" data-transition-speed="default" data-background-transition="fade">
+            <div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.794571);">
+                <section class="present" style="top: 234px; display: block;">
+                    <h2>【CSS-task-3】 </h2>
+                    <h4>px、em、rem、%、vw、wh、vm等单位有什么区别？</h4>
+                    <p style="text-align: center;">分享人：高世豪</p>
+                </section>
+                <section class="future" style="top: 3px; display: block;" hidden="" aria-hidden="true">
+                    <p>目录</p>
+                    <p>1. 背景介绍</p>
+                    <p>2. 知识剖析</p>
+                    <p>3. 常见问题</p>
+                    <p>4. 解决方案</p>
+                    <p>5. 编码实战</p>
+                    <p>6. 扩展思考</p>
+                    <p>7. 参考文献</p>
+                    <p>8. 更多讨论</p>
+                </section>
+                <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                    <h3>一、背景介绍</h3>
+                </section>
+                <section class="future" style="top: 190px; display: none;" hidden="" aria-hidden="true">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传统的项目开发中，我们只会用到px、%、em这几个单位，
+                        它可以适用于大部分的项目开发，并且拥有比较良好的兼容性。
+                        但是你知道吗？从css3开始，浏览器对逻辑单位的支持又提升到了另外一个境界，
+                        增加了rem、vh、vw、vm等一些新的长度单位，
+                        我们可以利用这些新的单位开发出比较良好的响应式页面，
+                        随之覆盖多种不同分辨率的终端，包括移动设备等。
+                        现在让我们来看下这些长度单位有什么区别。
+                       </p>
+
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>二、知识剖析</h3>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                  <p>1、什么是px？</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;px就是像素，也是我们现在经常使用的基本单位。
+                        px就是一张图片最小的一个点，一张位图就是千千万万这样的点构成的，
+                        比如常常听到的电脑像素是1024x768的，
+                        表示的是水平方向是1024个像素点，垂直方向是768个像素点。
+                        使用px时，页面按精准像素展示。
+                   </p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <p>2、什么是em？</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        相对单位，基准点为父节点字体的大小，
+                        如果自身定义了font-size按自身来计算（浏览器默认字体是16px），
+                        整个页面内1em不是一个固定的值。
+                    </p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <p>3、什么是rem？</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        相对单位，可理解为”root em”,
+                        相对根节点html（网页）的字体大小来计算，
+                        CSS3新加属性，chrome/firefox/IE9+支持。
+                        不会像em那样，依赖于父元素的字体大小，而造成混乱。
+                        rem参考物是相对于根元素，
+                        我们在使用时可以在根元素设置一个参考值即可，
+                        相对于em使用，减少很大运算工作量，例：html大小为10px，12rem就是120px
+                    </p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <p>(另外需注意chrome强制最小字体为12号，
+                        即使设置成 10px 最终都会显示成 12px，
+                        当把html的font-size设置成10px,子节点rem的计算还是以12px为基准，
+                        所以网上很多文章提到的将html的font-size设为10方便计算不是那么可取)。
+                    </p>
+                      <p>  rem在移动端应用可参考淘宝的页面http://m.taobao.com (html的font-size通过动态计算获取)
+                        页面基准320px(20px)
+                        注：需设置meta缩放比1:1
+                    </p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <p>4、什么是%？</p>
+                    <p>
+                        一般宽泛的讲是相对于父元素，但是并不是十分准确。</p>
+
+                    <p> 1、对于普通定位元素就是我们理解的父元素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                    <p>2、对于position: absolute;的元素是相对于已定位的父元素</p>
+
+                     <p>3、对于position: fixed;的元素是相对于ViewPort（可视窗口）</p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <p>5、什么是vw？</p>
+                    <p>v是viewport，可视窗口的意思。w是width，宽度的意思。视窗宽度
+                    </p>
+                    <p>举个例子：浏览器宽度1200px, 1 vw = 1200px/100 = 12 px</p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <p>6、什么是vh？</p>
+                    <p>v是viewport，可视窗口的意思。h是height，高度的意思。视窗高度
+                    </p>
+                    <p>举个例子：浏览器高度900px, 1 vh = 900px/100 = 9 px</p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <p>7、什么是vm？</p>
+                    <p>css3新单位，相对于视口的宽度或高度中较小的那个。其中最小的那个被均分为100单位的vm
+                    </p>
+                    <p>  举个例子：浏览器高度900px，宽度1200px，取最小的浏览器高度，1 vm = 900px/100 = 9 px。
+                        但是现在vm的兼容性很差。
+                    </p>
+                </section>
+                <section>
+                    <h3>三、常见问题</h3>
+                    <p>vh vw vm的实际应用场景</p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <h3>1、元素的尺寸限制</h3>
+                    <p>元素的尺寸限制：当我们在网页上点击一个图片，弹框出现原始大图的时候；或者在一屏内，没有滚动条的情况下，大图的幻灯片浏览。
+                        这类需求的让人头疼的地方之一就是原始大图的尺寸限制问题——因为很可能原始图片过大，一屏内放不下，我们就需要对它就行缩放处理。</p>
+                    <p>如果要实现这样的需求，我们需要计算图片的原始大小，以及浏览器的内部尺寸，算大小，算比例等，还是比较折腾的。
+                        如果在这里使用vh，vw等浏览器视区大小的单位，直接使用作为限制，就会少很多JS的代码,但是一定要保证使用的浏览器可以兼容</p>
+                    <p>img { max-height: 90vh; }</p>
+                    <p>css样式：.vw_vh_img {
+                        max-width: 90vw;
+                        max-height: 90vh;
+                        }</p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <h3>2、视区覆盖以及边界定位</h3>
+                    <p>既然vw, vh是视区相关单位，就想到是不是可以利用这个特性实现精确的视区大小覆盖以及视区边界的定位。
+                        拿视区覆盖举例，如果我定义一个元素的高宽如下：</p>
+                    <p>.element {
+                        width: 100vw;
+                        height: 100vh;
+                        }</p>
+                    <p>然后，再将其定位到视区左上角，就可以实现视区的完整覆盖；可想到弹出框的半透明覆盖层。</p>
+                    <p>参考页面：http://www.zhangxinxu.com/study/201209/vw-vh-css-custom-dialog.html。这里还有使用纯css实现的弹框的垂直居中效果</p>
+                    <p>不过，在某些情况下，vw、vh所产生的而效果与百分比%无异，尤其对于absolute/fixed定位属性的元素</p>
+                </section>
+<section>
+    <p>vw, vh用在宽度自适应上没有价值——%可以实现之</p>
+    <p>vw, vh用在absolute/fixed定位属性元素上没有价值——%可以实现</p>
+    <p>得出一个结论：vw, vh视区大小相关单位只适用于非定位元素的高度相关属性上！</p>
+</section>
+
+
+
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>四、解决方案</h3>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+
+                    <p>vh vw是不包含页面滚动条的视窗宽度(innerwidth)，%包含了滚动条的宽度在里面了(outerwidth)。</p>
+
+                    <p>  一般的情况下%就可以满足大部分自适应设计的需求，可以用height：100vh做一个高度占满屏幕的自适应，没有滚动条。
+                        用vw，vh设定的大小只和视窗大小有关，所以用来开发多种屏幕设备的应用用这个单位还是挺合适的。
+                       </p>
+                </section>
+
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>五、编码实战</h3>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>六、拓展思考</h3>
+                </section>
+                <section class="future" style="top: 178px; display: none;" hidden="" aria-hidden="true">
+                    <p>css还有哪些长度单位？</p>
+                    <p>in:寸</p>
+                    <p>cm:厘米</p>
+                    <p> mm:毫米</p>
+                    <p> t:point，大约1/72寸</p>
+                    <p> pc:pica，大约6pt，1/6寸</p>
+                    <p>1in = 2.54cm = 25.4 mm = 72pt = 6pc = 96px</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                <h3>七、参考文献</h3>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <p>CSS长度单位值测试实例页面</p>
+                    <p>视区相关单位vw、vh..简介以及可实际应用场景——张鑫旭</p>
+                    <p>css3中单位px,em,rem,vh,vw,vmin,vmax的区别及浏览器支持情况</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>八、更多讨论</h3>
+                </section>
+                <section class="future" style="top: 202.5px; display: none;" hidden="" aria-hidden="true">
+                    <h3>感谢观看</h3>
+                </section>
+            </div>
+        <div class="backgrounds"><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left" aria-label="previous slide"></button><button class="navigate-right enabled" aria-label="next slide"></button><button class="navigate-up" aria-label="above slide"></button><button class="navigate-down" aria-label="below slide"></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe=""></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+
+    分享人：高世豪
+                </div></div>
+<script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+<script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+                history: true,
+                dependencies: [{
+                    src: 'https://ptteng.github.io/PPT/plugin/markdown/marked.js'
+                },
+                    {
+                        src: 'https://ptteng.github.io/PPT/plugin/markdown/markdown.js'
+                    },
+                    {
+                        src: 'https://ptteng.github.io/PPT/plugin/notes/notes.js',
+                        async: true
+                    },
+                    {
+                        src: 'https://ptteng.github.io/PPT/plugin/highlight/highlight.js',
+                        async: true,
+                        callback: function () {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    }
+                ]
+            });
+        </script>
+
+    </body></html>
