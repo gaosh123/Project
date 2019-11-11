@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+
+}
+.top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: #29bde0;
+}
+.top-button{
+    /* 转换成行内块才能使用块级属性 */
+    display: inline-block;
+    width: 34px;
+    height: 4px;
+    padding: 6px 0;
+    margin: 23px 27px;
+    background-color: white;
+    /* 背景裁切 只裁切内容 */
+    background-clip: content-box;
+    /* 上下边框 */
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.content{
+    height: 899px;
+    padding-bottom: 54px;
+    background: #f0f0f0;
+}
+.content-hide{
+    height: 70px;
+    margin-bottom: 10px;
+}
+.content-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    margin: 23px 5% 50px 5%;
+
+
+    padding-right: 10px;
+    border: 1px solid#dddddd;
+    background: white;
+}
+.content-top-left{
+    width: 18px;
+}
+.content-top-center{
+    color: #9a9a9a;
+}
+.content-bottom{
+    margin: 0 5% 0 5% ;
+    border: 1px solid#dddddd;
+    background: white;
+}
+.content-bottom-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding-right: 1%;
+    border-bottom: 1px solid#fbb435;
+    color: #fbb435;
+}
+.content-bottom-two{
+    text-align: center;
+    line-height: 90px;
+    height: 90px;
+    margin: 30px 30px;
+    color: white;
+    background: #69d1e9;
+}
+.content-bottom-three{
+    text-align: center;
+    color: #9a9a9a;
+}
+.content-bottom-four{
+    text-align: center;
+    line-height: 90px;
+    height: 90px;
+    margin: 30px 30px;
+    color: white;
+    background: #69d1e9;
+}
+.content-bottom-five{
+    text-align: center;
+    color: #9a9a9a;
+}
+.content-bottom-six{
+    text-align: center;
+    line-height: 90px;
+    height: 90px;
+    margin: 30px 30px;
+    color: white;
+    background: #69d1e9;
+}
+.content-bottom-seven{
+    text-align: center;
+    color: #9a9a9a;
+}
+.content-bottom-eight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.content-bottom-eight-right{
+    height: 10px;
+    width: 10px;
+    margin: 4px;
+    border-radius: 10px;
+    background: #f0f0f0;
+}
+.content-bottom-eight-right:hover
+{
+    background: #69d1e9
+}
+.under{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.under-one{
+    width: 80%;
+}
+.right-button{
+padding-bottom : 75px;
+}
+.right-button a:hover{color: #69d1e9}
+.right-button a:active{color: #939393}
