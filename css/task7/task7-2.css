@@ -8,7 +8,7 @@ header{
     margin: 0;
 }
 main{
-    height: 270vh;
+    height: 350vh;
     background: #29bde0;
 }
 .header-top{
@@ -35,14 +35,16 @@ main{
     background: #b9e9f5;
 }
 .header-center-text{
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .audio{
     opacity: 0;
-    width: 105px;
+    width: 100px;
+    height: 50px;
 }
 .header-center-player{
-    margin-right: -58px;
+    margin-right: -65px;
+    margin-top: 5px;
 }
 .header-bottom{
     background: #29bde0;
@@ -71,7 +73,7 @@ main{
 }
 .block{
     width: 20%;
-    margin: 100px 2% 30px 2%;
+    margin: 50px 2% 30px 2%;
 }
 .block-one{
     text-align: center;
@@ -81,7 +83,7 @@ main{
 }
 .block-text{
     line-height: 16vw;
-    font-size: 20px;
+    font-size: 3vw;
     margin: 0;
 }
 .block-number{
@@ -93,18 +95,16 @@ main{
     opacity: 0.5;
 }
 .sprites{
-    position: absolute;
-    display: none;
-    min-width: 20%;
-    width: 20%;
+    opacity: 0;
+    width: 100%;
     margin: 20px 0 20px 0;
 }
 .sprites a:hover{
     text-decoration: none;
-    display: block;
+    opacity: 1;
 }
 .block:hover .sprites{
-    display: block
+   opacity: 1;
 }
 .block:hover .block-one{
     background: #fbb435;

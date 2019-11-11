@@ -99,8 +99,9 @@ main{
     border-top: 1px solid#939393;
 }
 .result-two{
-    display: flex;
+   display: flex;
     justify-content: space-around;
+
     margin-left: 20px;
     font-size: 15px;
     color: #939393;
@@ -124,6 +125,17 @@ footer{
     filter:alpha(Opacity=80);
     -moz-opacity:0.5;
     opacity: 0.5;
+
+}
+.one{
+    display: inline-flex;
+
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.5;
+    opacity: 0.5;
+    z-index: -10;
+    background: #29bde0;
+
 }
 .again{
     line-height: 50px;
