@@ -9,7 +9,9 @@ header {
     align-items: center;
     width: 100%;
     height: 70px;
+    border-bottom: 1px solid#74d4eb;
     background: #29bde0;
+
 }
 main{
     height: 1200px;
@@ -121,21 +123,7 @@ footer{
     bottom: 0;
     width: 100%;
     height: 70px;
-    background: #29bde0;
-    filter:alpha(Opacity=80);
-    -moz-opacity:0.5;
-    opacity: 0.5;
-
-}
-.one{
-    display: inline-flex;
-
-    filter:alpha(Opacity=80);
-    -moz-opacity:0.5;
-    opacity: 0.5;
-    z-index: -10;
-    background: #29bde0;
-
+    background-color: rgba(41,189,224,0.5);
 }
 .again{
     line-height: 50px;

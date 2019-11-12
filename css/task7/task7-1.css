@@ -119,11 +119,13 @@ body{
 }
 .under{
     width: 100%;
+    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .under-one{
+    margin-right: -10px;
     width: 80%;
 }
 .right-button{
