@@ -1,10 +1,12 @@
-.header-top{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 30px;
-}
+/*.header-top{*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    /*width: 100%;*/
+    /*height: 30px;*/
+    /*padding-left: 4%;!important;*/
+    /*padding-left: 0;*/
+/*}*/
 .header-top-left{
     color: #29b078;
     white-space: nowrap;
@@ -30,7 +32,15 @@
         color: #29b078;
     }
 }
-
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 66%;
+}
 .navbar{
     background: #29b078 !important;
 
@@ -47,7 +57,6 @@
 .logo{
     height: 49px;
     width: 107px;
-    margin-left:50px;
 }
 .menu-button{
     display: none;
@@ -242,15 +251,19 @@
     padding: 0;
     color: #939393;
 }
+.friend-link-background{
+    background: whitesmoke;
+    margin-top: 120px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
 ul{
     padding: 0;
 }
 .ul-three{
     padding-right: 16px;
 }
-li:hover{
-    text-decoration: underline solid#29b078;
-}
+
 footer{
     background: #29b078;
 }
@@ -267,9 +280,9 @@ footer{
     border-right: 2px solid#ffffff;
     padding-right: 10px;
 }
-.footer-text-left-padding{
-    padding-left: 10px;
-}
+/*.footer-text-left-padding{*/
+    /*padding-left: 10px;*/
+/*}*/
 .footer-text-col{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -284,15 +297,13 @@ footer{
 }
 .footer-text-hover{
 }
-.footer-text-hover:hover{
-    text-decoration: underline solid#ffffff;
-}
+
 .footer-text-col-center{
     margin-bottom: 10px;
 }
 .wechat{
     text-align: right;
-    padding-right: 16px;
+    padding-right: 45px;
 }
 @media (max-width: 1199px) {
     .wechat{
@@ -301,6 +312,7 @@ footer{
 }
 .footer-bottom{
     text-align: center;
-    height: 55px;
     color: #ffffff;
+    margin-bottom: 0;
+    border-top: 1px solid#32c086;
 }
