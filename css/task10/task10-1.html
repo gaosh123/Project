@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task10</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="task10.css">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row  header-top">
+            <div class="col-6">
+                <span>
+                    客服热线：010-594-78634
+                </span>
+            </div>
+            <div class="header-top-right col-6">
+                <span class="a">
+                    登录
+                </span>
+                <span class="b">
+                    注册
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="header-second">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link nav-item header-text" href="#">首页<span class="sr-only">(current)</span></a>
+                        <a class="nav-link nav-item header-text" href="#">在线定制</a>
+                        <a class="nav-link nav-item header-text" href="#">标准箱</a>
+                        <a class="nav-link header-text nav-item" href="#">品质保障</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="row main-top">
+            <div class="main-top-one">
+                <div class="main-top-one-a">
+                    <div class="crossing">
+                    </div>
+                    <div class="circle">
+                        <p>1</p>
+                    </div>
+                    <div class="crossing">
+                    </div>
+                </div>
+                <p class="main-top-text"><b>1.定制纸箱</b></p>
+            </div>
+            <div class="main-top-one">
+                <div class="main-top-one-a">
+                    <div class="crossing">
+                    </div>
+                    <div class="circle">
+                        <p>1</p>
+                    </div>
+                    <div class="crossing">
+                    </div>
+                </div>
+                <p class="main-top-text"><b>2.选择数量</b></p>
+            </div>
+            <div class="main-top-one">
+                <div class="main-top-one-a">
+                    <div class="crossing">
+                    </div>
+                    <div class="circle">
+                        <p>1</p>
+                    </div>
+                    <div class="crossing">
+                    </div>
+                </div>
+                <p class="main-top-text"><b>3.上传附件</b></p>
+            </div>
+            <div class="main-top-one">
+                <div class="main-top-one-a">
+                    <div class="crossing">
+                    </div>
+                    <div class="circle">
+                        <p>1</p>
+                    </div>
+                    <div class="crossing">
+                    </div>
+                </div>
+                <p class="main-top-text"><b>4.确认下单</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <p class="main-two"><b>请您按照以下步骤来定制您的纸箱</b></p>
+        </div>
+        <div class="row box">
+            <img src="img/box.png"/>
+            <span class="box-text">选择箱型</span>
+        </div>
+        <div class="row">
+            <div class="checkbox-text col-lg-2 col-md-12 col-sm-12">
+                <div class="checkbox">
+                    <input class="input" type="radio" value="1" id="checkInputOne" name="checkbox1"/>
+                    <label for="checkInputOne"></label>
+                </div>
+                <p class="checkbox-p">对口箱</p>
+            </div>
+            <div class="checkbox-text col-lg-2  col-md-12 col-sm-12">
+                <div class="checkbox">
+                    <input class="input" type="radio" value="2" id="checkInputTwo" name="checkbox1"/>
+                    <label for="checkInputTwo"></label>
+                </div>
+                <p class="checkbox-p">飞机盒</p>
+            </div>
+            <div class="checkbox-text col-lg-2  col-md-12 col-sm-12">
+                <div class="checkbox">
+                    <input class="input" type="radio" value="3" id="checkInputThree" name="checkbox1"/>
+                    <label for="checkInputThree"></label>
+                </div>
+                <p class="checkbox-p">天地盖</p>
+            </div>
+            <div class="dropdown show col-lg-2 col-md-12 com-sm-12 main-two-right-position">
+                <a class="menu btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    查看详情
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">看什么看</a>
+                    <a class="dropdown-item" href="#">你还看？</a>
+                    <a class="dropdown-item" href="#">你别看了</a>
+                </div>
+            </div>
+        </div>
+        <div class="row box">
+            <img src="img/Ruler.png"/>
+            <span class="box-text">确定尺寸</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="checkbox-text col-lg-2 col-md-12 col-sm-12">
+                        <div class="checkbox">
+                            <input class="input" type="radio" value="1" id="checkInputFour" name="radio2"/>
+                            <label for="checkInputFour"></label>
+                        </div>
+                        <p class="checkbox-p">外径</p>
+                    </div>
+                    <div class="col-lg-2 chicun col-md-12">
+                        <span>长</span><input type="number" min="1" onkeyup="this.value=(this.value.match(/\d+(\.\d{0,2})?/)||[''])[0]" class="main-three-input"><span>mm</span>
+                    </div>
+                    <div class="col-lg-2 chicun col-md-12">
+                        <span>宽</span><input type="number" min="1" onkeyup="this.value=(this.value.match(/\d+(\.\d{0,2})?/)||[''])[0]" class="main-three-input"><span>mm</span>
+                    </div>
+                    <div class="col-lg-2 chicun col-md-12">
+                        <span>高</span><input type="number" min="1" onkeyup="this.value=(this.value.match(/\d+(\.\d{0,2})?/)||[''])[0]" class="main-three-input"><span>mm</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="checkbox-text col-lg-2 col-md-12 col-sm-12">
+                        <div class="checkbox">
+                            <input class="input" type="radio" value="1" id="checkInputFive" name="radio2"/>
+                            <label for="checkInputFive"></label>
+                        </div>
+                        <p class="checkbox-p">内径</p>
+                    </div>
+                    <div class="col-lg-2 chicun col-md-12">
+                        <span>长</span><input type="number" min="1" onkeyup="this.value=(this.value.match(/\d+(\.\d{0,2})?/)||[''])[0]" class="main-three-input"><span>mm</span>
+                    </div>
+                    <div class="col-lg-2 chicun col-md-12">
+                        <span>宽</span><input type="number" min="1" onkeyup="this.value=(this.value.match(/\d+(\.\d{0,2})?/)||[''])[0]" class="main-three-input"><span>mm</span>
+                    </div>
+                    <div class="col-lg-2 chicun col-md-12">
+                        <span>高</span><input type="number" min="1" onkeyup="this.value=(this.value.match(/\d+(\.\d{0,2})?/)||[''])[0]" class="main-three-input"><span>mm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown show col-lg-2 col-md-12 com-sm-12 main-three-right-position">
+                <a class="menu btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    查看详情
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">看什么看</a>
+                    <a class="dropdown-item" href="#">你还看？</a>
+                    <a class="dropdown-item" href="#">你别看了</a>
+                </div>
+            </div>
+        </div>
+        <div class="row box">
+            <img src="img/Cut%20_%20Scissors.png"/>
+            <span class="box-text">选择材质</span>
+        </div>
+        <div class="row main-three">
+            <div class="checkbox-text col-lg-2 col-md-12 col-sm-12">
+                <div class="checkbox">
+                    <input class="input" type="radio" value="1" id="checkInputSix" name="radio3"/>
+                    <label for="checkInputSix"></label>
+                </div>
+                <p class="checkbox-p">三层A瓦优质</p>
+            </div>
+            <div class="checkbox-text col-lg-2 col-md-12 col-sm-12">
+                <div class="checkbox">
+                    <input class="input" type="radio" value="1" id="checkInputSeven" name="radio3"/>
+                    <label for="checkInputSeven"></label>
+                </div>
+                <p class="checkbox-p">三层A瓦优质</p>
+            </div>
+            <div class="checkbox-text col-lg-2 col-md-12 col-sm-12">
+                <div class="checkbox">
+                    <input class="input" type="radio" value="1" id="checkInputEight" name="radio3"/>
+                    <label for="checkInputEight"></label>
+                </div>
+                <p class="checkbox-p">三层A瓦优质</p>
+            </div>
+            <div class="checkbox-text col-lg-2 col-md-12 col-sm-12">
+                <div class="checkbox">
+                    <input class="input" type="radio" value="1" id="checkInputNine" name="radio3"/>
+                    <label for="checkInputNine"></label>
+                </div>
+                <p class="checkbox-p">三层A瓦优质</p>
+            </div>
+            <div class="checkbox-text col-lg-2 col-md-12 col-sm-12">
+                <div class="checkbox">
+                    <input class="input" type="radio" value="1" id="checkInputTen" name="radio3"/>
+                    <label for="checkInputTen"></label>
+                </div>
+                <p class="checkbox-p">三层A瓦优质</p>
+            </div>
+            <div class="dropdown show col-lg-2 col-md-12 com-sm-12 main-three-right-position">
+                <a class="menu btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    查看详情
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">看什么看</a>
+                    <a class="dropdown-item" href="#">你还看？</a>
+                    <a class="dropdown-item" href="#">你别看了</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row next-position">
+            <div class="next">
+                <h3>下一步</h3>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-sm-12 col-md-12 col-xl-4">
+                    <span class="footer-text-left"><b>51包装网一纸箱包装首选服务平台</b></span>
+                </div>
+                <div class="col-sm-12 col-md-12 col-xl-4">
+                    <div class="d-flex">
+                        <span class="footer-text-center">关于我们</span>
+                        <span class="footer-text-center">配送流程</span>
+                        <span class="footer-text-center">联系我们</span>
+                    </div>
+                    <div class="d-flex">
+                        <span class="footer-text-center">下单指南</span>
+                        <span class="footer-text-center">媒体介绍</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-xl-2">
+                    <span class="footer-text-right">TEL:400-0000-000</span>
+                    <span class="footer-text-right">企业QQ号：123456789</span>
+                    <span class="footer-text-right">微信号：XXXXXXXX</span>
+                </div>
+                <div class="col-sm-12 col-md-12 col-xl-1 footer-pic">
+                    <img class="footer-picture" src="img/wechat.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="row footer-bottom-text">
+            <span class="span">北京五一包装科技有限公司Copyright ©2015
+                51baozhuang.com015   All rights reserved.   京icp备99999999-1</span>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
