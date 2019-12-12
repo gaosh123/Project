@@ -46,8 +46,8 @@
 <div class="reveal slide center" role="application" data-transition-speed="default" data-background-transition="fade">
             <div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.794571);">
                 <section class="present" style="top: 234px; display: block;">
-                    <h2>【CSS-task-3】 </h2>
-                    <h4>px、em、rem、%、vw、wh、vm等单位有什么区别？</h4>
+                    <h2>【CSS-task-8】 </h2>
+                    <h4>bootstrap有哪些常用组件？</h4>
                     <p style="text-align: center;">分享人：高世豪</p>
                 </section>
                 <section class="future" style="top: 3px; display: block;" hidden="" aria-hidden="true">
@@ -65,13 +65,12 @@
                     <h3>一、背景介绍</h3>
                 </section>
                 <section class="future" style="top: 190px; display: none;" hidden="" aria-hidden="true">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传统的项目开发中，我们只会用到px、%、em这几个单位，
-                        它可以适用于大部分的项目开发，并且拥有比较良好的兼容性。
-                        但是你知道吗？从css3开始，浏览器对逻辑单位的支持又提升到了另外一个境界，
-                        增加了rem、vh、vw、vm等一些新的长度单位，
-                        我们可以利用这些新的单位开发出比较良好的响应式页面，
-                        随之覆盖多种不同分辨率的终端，包括移动设备等。
-                        现在让我们来看下这些长度单位有什么区别。
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bootstrap 是一个用于快速开发 Web 应用程序和网站的前端框架?他是由美国的Twitter 公司开发的一款简洁、直观、强悍的 前端开发框架，
+                        作用就是使得 Web 开发更加快捷。
+                        Bootstrap中包含了丰富的Web组件，根据这些组件，
+                        可以快速的搭建一个漂亮、功能完备的网站，Bootstrap 提供了优雅的 HTML 和 CSS 规范，
+                        它即是由动态 CSS 语言 Less 写成。Bootstrap 一经推出后颇受欢迎，一直是 GitHub 上的热门开源项目 国内一些移动开发者较为熟悉的框架，
+                        如 WeX5 前端开源框架等，也是基于 Bootstrap 源码进行性能优化而来。
                        </p>
 
                 </section>
@@ -79,109 +78,36 @@
                     <h3>二、知识剖析</h3>
                 </section>
                 <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                  <p>1、什么是px？</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;px就是像素，也是我们现在经常使用的基本单位。
-                        px就是一张图片最小的一个点，一张位图就是千千万万这样的点构成的，
-                        比如常常听到的电脑像素是1024x768的，
-                        表示的是水平方向是1024个像素点，垂直方向是768个像素点。
-                        使用px时，页面按精准像素展示。
+                  <p>1、什么是组件？</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        组件:一般就是是指软件系统的一部分，每个承担了特定的职责，他呢可以独立于整个系统进行开发和测试， 一个良好设计的组件应该可以在不同的软件系统中被使用(可复用)。
+                        比如我们可以写一个官网的响应式导航栏组件，什么时候官网扩增页面了，然后就是我们可以直接拉过来重复使用。
+                        它为开发人员创建接口提供了一个简洁统一的解决方案。它包含了功能强大的内置组件，易于定制。它还提供了基于 Web 的定制。它是开源的。
+                    
+
+                       
                    </p>
                 </section>
                 <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                    <p>2、什么是em？</p>
+                    <p>2、目前常用的组件有哪些？</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        相对单位，基准点为父节点字体的大小，
-                        如果自身定义了font-size按自身来计算（浏览器默认字体是16px），
-                        整个页面内1em不是一个固定的值。
+                        目前常用的bootstrap组件：1、轮播图 2、下拉菜单3、响应式导航栏
                     </p>
                 </section>
-                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                    <p>3、什么是rem？</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        相对单位，可理解为”root em”,
-                        相对根节点html（网页）的字体大小来计算，
-                        CSS3新加属性，chrome/firefox/IE9+支持。
-                        不会像em那样，依赖于父元素的字体大小，而造成混乱。
-                        rem参考物是相对于根元素，
-                        我们在使用时可以在根元素设置一个参考值即可，
-                        相对于em使用，减少很大运算工作量，例：html大小为10px，12rem就是120px
-                    </p>
-                </section>
-                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                    <p>(另外需注意chrome强制最小字体为12号，
-                        即使设置成 10px 最终都会显示成 12px，
-                        当把html的font-size设置成10px,子节点rem的计算还是以12px为基准，
-                        所以网上很多文章提到的将html的font-size设为10方便计算不是那么可取)。
-                    </p>
-                      <p>  rem在移动端应用可参考淘宝的页面http://m.taobao.com (html的font-size通过动态计算获取)
-                        页面基准320px(20px)
-                        注：需设置meta缩放比1:1
-                    </p>
-                </section>
-                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                    <p>4、什么是%？</p>
-                    <p>
-                        一般宽泛的讲是相对于父元素，但是并不是十分准确。</p>
-
-                    <p> 1、对于普通定位元素就是我们理解的父元素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-
-                    <p>2、对于position: absolute;的元素是相对于已定位的父元素</p>
-
-                     <p>3、对于position: fixed;的元素是相对于ViewPort（可视窗口）</p>
-                </section>
-                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                    <p>5、什么是vw？</p>
-                    <p>v是viewport，可视窗口的意思。w是width，宽度的意思。视窗宽度
-                    </p>
-                    <p>举个例子：浏览器宽度1200px, 1 vw = 1200px/100 = 12 px</p>
-                </section>
-                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                    <p>6、什么是vh？</p>
-                    <p>v是viewport，可视窗口的意思。h是height，高度的意思。视窗高度
-                    </p>
-                    <p>举个例子：浏览器高度900px, 1 vh = 900px/100 = 9 px</p>
-                </section>
-                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                    <p>7、什么是vm？</p>
-                    <p>css3新单位，相对于视口的宽度或高度中较小的那个。其中最小的那个被均分为100单位的vm
-                    </p>
-                    <p>  举个例子：浏览器高度900px，宽度1200px，取最小的浏览器高度，1 vm = 900px/100 = 9 px。
-                        但是现在vm的兼容性很差。
-                    </p>
-                </section>
+               
+               
+               
+                  
                 <section>
                     <h3>三、常见问题</h3>
-                    <p>vh vw vm的实际应用场景</p>
+                    
                 </section>
                 <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                    <h3>1、元素的尺寸限制</h3>
-                    <p>元素的尺寸限制：当我们在网页上点击一个图片，弹框出现原始大图的时候；或者在一屏内，没有滚动条的情况下，大图的幻灯片浏览。
-                        这类需求的让人头疼的地方之一就是原始大图的尺寸限制问题——因为很可能原始图片过大，一屏内放不下，我们就需要对它就行缩放处理。</p>
-                    <p>如果要实现这样的需求，我们需要计算图片的原始大小，以及浏览器的内部尺寸，算大小，算比例等，还是比较折腾的。
-                        如果在这里使用vh，vw等浏览器视区大小的单位，直接使用作为限制，就会少很多JS的代码,但是一定要保证使用的浏览器可以兼容</p>
-                    <p>img { max-height: 90vh; }</p>
-                    <p>css样式：.vw_vh_img {
-                        max-width: 90vw;
-                        max-height: 90vh;
-                        }</p>
+                        <p>1、为什么使用bootstrap？</p>
+                    <p>2、背景颜色还有字体怎么更改</p>
+                    <p>3、导航栏介绍</p>
                 </section>
-                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                    <h3>2、视区覆盖以及边界定位</h3>
-                    <p>既然vw, vh是视区相关单位，就想到是不是可以利用这个特性实现精确的视区大小覆盖以及视区边界的定位。
-                        拿视区覆盖举例，如果我定义一个元素的高宽如下：</p>
-                    <p>.element {
-                        width: 100vw;
-                        height: 100vh;
-                        }</p>
-                    <p>然后，再将其定位到视区左上角，就可以实现视区的完整覆盖；可想到弹出框的半透明覆盖层。</p>
-                    <p>参考页面：http://www.zhangxinxu.com/study/201209/vw-vh-css-custom-dialog.html。这里还有使用纯css实现的弹框的垂直居中效果</p>
-                    <p>不过，在某些情况下，vw、vh所产生的而效果与百分比%无异，尤其对于absolute/fixed定位属性的元素</p>
-                </section>
-<section>
-    <p>vw, vh用在宽度自适应上没有价值——%可以实现之</p>
-    <p>vw, vh用在absolute/fixed定位属性元素上没有价值——%可以实现</p>
-    <p>得出一个结论：vw, vh视区大小相关单位只适用于非定位元素的高度相关属性上！</p>
-</section>
+
 
 
 
@@ -190,11 +116,16 @@
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
 
-                    <p>vh vw是不包含页面滚动条的视窗宽度(innerwidth)，%包含了滚动条的宽度在里面了(outerwidth)。</p>
+                    <p>1、首先队对于我们这些初学者来说，就是简单容易上手：只要你具备 HTML 和 CSS 的基础知识，
+                        你就可以开始学习 Bootstrap。然后移动设备优先：自 Bootstrap 3 起，框架包含了贯穿于整个库的移动设备优先的样式，
+                        现在的bootstap4 ，用的flex布局可以更简洁直观，浏览器支持：所有的主流浏览器都支持 Bootstrap。</p>
 
-                    <p>  一般的情况下%就可以满足大部分自适应设计的需求，可以用height：100vh做一个高度占满屏幕的自适应，没有滚动条。
-                        用vw，vh设定的大小只和视窗大小有关，所以用来开发多种屏幕设备的应用用这个单位还是挺合适的。
+                    <p>  2、 关于背景字体颜色，直接在开发者工具里找到其对应颜色属性进行修改
                        </p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                3、导航栏是一个很好的功能，是 Bootstrap 网站的一个突出特点。导航栏在您的应用或网站中作为导航页头的响应式基础组件。
+                导航栏在移动设备的视图中是折叠的，随着可用视口宽度的增加，导航栏也会水平展开。在 Bootstrap 导航栏的核心中，导航栏包括了站点名称和基本的导航定义样式。
                 </section>
 
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
@@ -204,21 +135,34 @@
                     <h3>六、拓展思考</h3>
                 </section>
                 <section class="future" style="top: 178px; display: none;" hidden="" aria-hidden="true">
-                    <p>css还有哪些长度单位？</p>
-                    <p>in:寸</p>
-                    <p>cm:厘米</p>
-                    <p> mm:毫米</p>
-                    <p> t:point，大约1/72寸</p>
-                    <p> pc:pica，大约6pt，1/6寸</p>
-                    <p>1in = 2.54cm = 25.4 mm = 72pt = 6pc = 96px</p>
+                    <p>使用bootstrap需要注意的问题</p>
+                    <p>1、一定要把行和列包裹在.container中，如果不包裹，行内元素会占据整个body，而container是固定宽度1170px</p>
+                    <p>2、Bootstrap是基于border-box为盒模型基准尺寸，即box-sizing属性为border-box，
+                        意思是为元素指定的宽和高等于内容+内边距+边框的大小（房屋面积含墙体），
+                        所以增加内边距会使内容尺寸变小Bootstrap是基于border-box为盒模型基准尺寸，即box-sizing属性为border-box，
+                        意思是为元素指定的宽和高等于内容+内边距+边框的大小（房屋面积含墙体），所以增加内边距会使内容尺寸变小</p>
+                </section>
+                <section class="future" style="top: 178px; display: none;" hidden="" aria-hidden="true">
+                    <p>3、在每一行中最多可以指定12列，指定的列越多，每一列所分得的列宽也越小，
+                        当列宽不足以盛下元素时，溢出部分会被隐藏，这提示我们overflow属性设置为hidden。
+                        所以当你设置col-lg-3时，意味着你可以在这一行下写4个这样宽度的列，你若多写一个会自动换行。</p>
+                    <p>4、若要做成响应式的网页，千万不要让你的块级元素有固定的较大宽度，或者元素的内外边距有固定的较大宽度，
+                        否则在移动设备上会有页边出现，或者有元素溢出。哪怕是margin-left:50%这样的都要小心用，
+                        因为你使用这条语句的目标元素自身的宽度很可能会在小屏幕上超过50%的屏幕像素，除非该元素本身也是响应式的。 </p>
+                       
+                </section>
+                <section class="future" style="top: 178px; display: none;" hidden="" aria-hidden="true">
+                        <p>5、负的外边距在右或下时，对独立的元素而言，周围会产生一个磁场，
+                            一右边或下边有元素，就会被吸进这个黑洞（减掉相应的外边距）；负的外边距在左或上时，会使元素左移或上移相应外边距的距离。
+                        </p>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
                 <h3>七、参考文献</h3>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
-                    <p>CSS长度单位值测试实例页面</p>
-                    <p>视区相关单位vw、vh..简介以及可实际应用场景——张鑫旭</p>
-                    <p>css3中单位px,em,rem,vh,vw,vmin,vmax的区别及浏览器支持情况</p>
+                    <p>1、bootstrap中文网</p>
+                    <p>2、菜鸟教程</p>
+                    <p>3、CSDN：大白话讲解bootstrap是什么？</p>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
                     <h3>八、更多讨论</h3>
