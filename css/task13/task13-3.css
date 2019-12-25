@@ -1,0 +1,132 @@
+.w, body, header, footer {
+  max-width: 780px;
+  min-width: 320px;
+}
+
+.flex, header, footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+}
+
+.bottom-text, footer .again, footer .share {
+  line-height: 50px;
+  text-align: center;
+  height: 50px;
+  width: 30%;
+  font-size: 19px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.flex-2, main .massage .part-word-f, main .massage .part-word-t, main .one-day .date, main .one-day .result-one, main .one-day .result-two {
+  display: flex;
+  justify-content: space-around;
+}
+
+.result-text, main .one-day .result-one, main .one-day .result-two {
+  margin: 10px 0 5px 20px;
+  color: #939393;
+}
+
+body {
+  margin: 0 auto;
+}
+
+header {
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #74d4eb;
+  background: #29bde0;
+}
+header .header-left {
+  padding-left: 5%;
+}
+header .header-center {
+  color: #ffffff;
+  font-size: 23px;
+}
+header .header-right {
+  padding-right: 5%;
+}
+
+main {
+  height: 1200px;
+}
+main .blank {
+  height: 70px;
+}
+main .massage {
+  background: #29bde0;
+  color: #ffffff;
+}
+main .massage .main-top {
+  text-align: center;
+}
+main .massage .main-top .win {
+  max-width: 60%;
+}
+main .massage .main-second {
+  text-align: center;
+  margin: 5px 20px 5px 20px;
+  color: #fbb435;
+}
+main .massage .use-time {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 18px;
+  color: #ffffff;
+}
+main .massage .part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  margin: 5px 20px 5px 20px;
+}
+main .massage .part .part-text {
+  text-align: center;
+  margin: 10px 0 10px 0;
+  width: 33%;
+}
+main .massage .part-word-f {
+  margin: 10px 0 10px 0;
+}
+main .massage .part-word-t {
+  margin: 10px 0 0 0;
+  padding-bottom: 10px;
+}
+main .one-day {
+  border-top: 1px solid #939393;
+}
+main .one-day .date {
+  margin-top: 10px;
+  color: #939393;
+}
+main .one-day .result-two {
+  padding-left: 5px;
+}
+
+.four-day {
+  border-bottom: 1px solid #939393;
+}
+
+footer {
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(41, 189, 224, 0.5);
+}
+footer .again {
+  background: red;
+  color: #ffffff;
+}
+footer .share {
+  background: #fbb435;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=task13-3.css.map */

@@ -1,0 +1,178 @@
+.flex, aside a, .content .content-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-2, .content .content-bottom .content-bottom-one, .content .content-bottom .under, .content .content-bottom .under .under-one .content-bottom-eight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+#sidebar {
+  display: none;
+}
+
+#sidebar:checked + aside {
+  left: 0;
+}
+
+#sidebar:checked ~ #wrap {
+  padding-left: 220px;
+}
+
+#sidebar:checked ~ .asd {
+  padding-left: 50%;
+  margin-right: -50%;
+}
+
+#side li {
+  list-style: none;
+  color: #29bde0;
+  width: 95%;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+}
+
+header {
+  height: 50px;
+  background-color: #29bde0;
+  line-height: 50px;
+}
+header label {
+  color: #fbfcff;
+  cursor: pointer;
+  font-family: -webkit-pictograph;
+  font-size: 3rem;
+  padding-left: 3%;
+}
+header #wrap {
+  margin-left: 20px;
+  padding: 10px;
+  transition: 0.2s ease-out;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -50%;
+  width: 50%;
+  background: #fff;
+  transition: 0.2s ease-out;
+}
+aside a {
+  padding: 0.2rem;
+  text-decoration: none;
+  border-bottom: 1px solid #9c9c9c;
+}
+
+.content {
+  height: 899px;
+  padding-bottom: 54px;
+  background: #f0f0f0;
+}
+.content .content-hide {
+  height: 10px;
+}
+.content .content-top {
+  height: 90px;
+  margin: 23px 5% 50px 5%;
+  padding-right: 10px;
+  border: 1px solid #dddddd;
+  background: white;
+}
+.content .content-top .content-top-left {
+  width: 18px;
+}
+.content .content-top .content-top-center {
+  color: #9a9a9a;
+}
+.content .content-bottom {
+  margin: 0 5% 0 5%;
+  border: 1px solid #dddddd;
+  background: white;
+}
+.content .content-bottom .content-bottom-one {
+  height: 60px;
+  padding-right: 1%;
+  border-bottom: 1px solid #fbb435;
+  color: #fbb435;
+}
+.content .content-bottom .under {
+  width: 100%;
+  margin-left: 10px;
+}
+.content .content-bottom .under .under-one {
+  margin-right: -10px;
+  width: 80%;
+}
+.content .content-bottom .under .under-one .content-bottom-two {
+  text-align: center;
+  line-height: 90px;
+  height: 90px;
+  margin: 30px 30px;
+  color: white;
+  background: #69d1e9;
+}
+.content .content-bottom .under .under-one .content-bottom-three {
+  text-align: center;
+  color: #9a9a9a;
+}
+.content .content-bottom .under .under-one .content-bottom-four {
+  text-align: center;
+  line-height: 90px;
+  height: 90px;
+  margin: 30px 30px;
+  color: white;
+  background: #69d1e9;
+}
+.content .content-bottom .under .under-one .content-bottom-five {
+  text-align: center;
+  color: #9a9a9a;
+}
+.content .content-bottom .under .under-one .content-bottom-six {
+  text-align: center;
+  line-height: 90px;
+  height: 90px;
+  margin: 30px 30px;
+  color: white;
+  background: #69d1e9;
+}
+.content .content-bottom .under .under-one .content-bottom-seven {
+  text-align: center;
+  color: #9a9a9a;
+}
+.content .content-bottom .under .under-one .content-bottom-eight {
+  padding-bottom: 30px;
+}
+.content .content-bottom .under .under-one .content-bottom-eight .content-bottom-eight-right {
+  height: 10px;
+  width: 10px;
+  margin: 4px;
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+.content .content-bottom .under .under-one .content-bottom-eight .content-bottom-eight-right:hover {
+  background: #69d1e9;
+}
+.content .content-bottom .under .right-button {
+  padding-bottom: 75px;
+}
+
+/*# sourceMappingURL=task13.1.css.map */
