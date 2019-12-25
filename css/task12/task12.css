@@ -1,0 +1,115 @@
+html {
+  height: 100%;
+}
+
+.flex-1, .bottom, footer .left, footer .right, header, main .one, main .one .one-right .one-right-bottom, main .two .two-two, main .two .two-three {
+  display: flex;
+  align-items: center;
+}
+
+.bottom, footer .left, footer .right {
+  justify-content: center;
+  height: 50px;
+  width: 44%;
+  border: 2px solid #68cdd5;
+  border-radius: 10px;
+}
+
+body {
+  min-height: 100%;
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: #ffffff;
+  background: #68cdd5;
+  padding: 5px 20px;
+}
+header span {
+  margin: 0 auto;
+}
+
+main .one {
+  background-image: url("img/back.png");
+  height: 355px;
+  background-size: cover;
+  color: #fff;
+  padding-left: 20px;
+}
+main .one .one-left {
+  height: 140px;
+}
+main .one .one-right {
+  padding-left: 20px;
+}
+main .one .one-right .one-right-top {
+  font-size: 1.5rem;
+}
+main .one .one-right .one-right-bottom {
+  padding-top: 8px;
+}
+main .two .two-one {
+  border-left: 3px solid #68cdd5;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+main .two .two-two {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding-left: 20px;
+}
+main .two .two-two p {
+  padding: 5px 10px 5px 5px;
+}
+main .two .two-two img {
+  padding-left: 20px;
+  height: 1rem;
+}
+main .two .two-two .img-1 {
+  border-left: 1px solid #dddddd;
+  height: 1rem;
+  padding-left: 10px;
+}
+main .two .two-three {
+  padding-left: 20px;
+}
+main .two .two-three p {
+  padding-right: 20px;
+  padding-left: 10px;
+}
+main .two .two-three .two-three-p {
+  border-right: 1px solid #dddddd;
+  color: #000000;
+  padding-left: 20px;
+  min-width: 70px;
+}
+main .two .two-three .two-five-p {
+  color: red;
+}
+main .two .two-four {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex: 1;
+  font-size: 1.5rem;
+}
+footer .left {
+  margin-left: 4%;
+  color: #68cdd5;
+}
+footer .right {
+  margin-right: 4%;
+  background: #68cdd5;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=task12.css.map */
