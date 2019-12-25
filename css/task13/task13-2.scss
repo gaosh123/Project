@@ -1,0 +1,140 @@
+
+body{
+  margin: 0;
+}
+.flex-box-style-1{
+  display: flex;
+  align-items: center;
+}
+.limit{
+  margin: auto;
+  max-width: 780px;
+  min-width: 320px;
+  width: 100%;
+  background-color: #29bde0;
+}
+header{
+  margin: auto;
+  max-width: 780px;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #29bde0;
+}
+.head-vote{
+  height: 50px;
+  @extend .flex-box-style-1;
+  justify-content: space-between;
+  img{
+    margin: 0 20px 0 20px;
+  }
+}
+.head-speak{
+  height: 50px;
+  @extend .flex-box-style-1;
+  justify-content: space-between;
+  background-color: #b9e9f5;
+  span{
+    padding-left: 20px;
+  }
+  img{
+    margin-right: -12px;
+  }
+  .music{
+    opacity: 0;
+    transform: scaleX(-1);
+    width: 5rem;
+    height: 2rem;
+    margin-left: -3rem;
+  }
+}
+.head-click{
+  height: 40px;
+  .h_ten{
+    height:0;
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-color:#b9e9f5 transparent transparent transparent;
+    border-style:solid dashed dashed dashed;
+    border-width:6px;
+    margin-left: 35px;
+  }
+  span{
+    color: white;
+    font-size: 13px;
+    margin-left: 40px;
+  }
+}
+main{
+  margin: auto;
+  max-width: 780px;
+  min-width: 320px;
+  background-color: #29bde0;
+  padding:150px 0 80px 0;
+}
+.main-box{
+  @extend .flex-box-style-1;
+  justify-content: space-around;
+}
+.box{
+  width: 25%;
+  height: 35vw;
+  max-height: 270px;
+}
+.white-box{
+  height: 25vw;
+  max-height: 195px;
+  border: solid 3px #fff;
+}
+.name{
+  height: 75%;
+  background-color: #f5c97b;
+  @extend .flex-box-style-1;
+  justify-content: center;
+  color: #787878;
+}
+.number{
+  height: 25%;
+  background-color: #83b09a;
+  @extend .flex-box-style-1;
+  justify-content: center;
+  color: #fbfcff;
+}
+.main-sprites{
+  background: url("img/css_sprites1.png") no-repeat;
+  background-size: 100% 100%;
+  height: 3rem;
+  display: none;
+  margin-top: 5px;
+}
+.box:hover{
+  .main-sprites{
+    display: block;
+  }
+}
+footer{
+  margin: auto;
+  max-width: 780px;
+  min-width: 320px;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  @extend .flex-box-style-1;
+  justify-content: center;
+  bottom: 0;
+  background-color: #29bde0;
+  .be-faithful-till-death{
+    @extend .flex-box-style-1;
+    justify-content: center;
+    height: 50px;
+    width: 80%;
+    background-color: #f5c97b;
+  }
+  a{
+    text-decoration: none;
+    color: #fbfcff;
+  }
+}
