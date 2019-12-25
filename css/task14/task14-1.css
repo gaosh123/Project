@@ -1,0 +1,228 @@
+*, *::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navigation-color {
+  background-color: #26a26f;
+}
+
+.main-box {
+  height: 10vw;
+}
+
+.main-efficient {
+  text-align: center;
+}
+.main-efficient h4 {
+  padding: 20px 0 20px 0;
+}
+.main-efficient span {
+  color: #999999;
+}
+
+.main-people {
+  text-align: center;
+  border-left: 1px dashed #dedede;
+}
+.main-people .text-people {
+  padding: 15px 0 15px 0;
+}
+.main-people span {
+  color: #999999;
+}
+
+.main-study {
+  height: 10vw;
+  align-items: center;
+  text-align: center;
+}
+.main-study span {
+  font-size: 20px;
+}
+
+.study {
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.study .round-frame {
+  min-width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #29b078;
+  line-height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 50px;
+}
+.study .list-box {
+  font-size: 13px;
+  color: #b3b3b3;
+  padding-left: 10px;
+  width: 54%;
+}
+
+.card-box {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.card-box .main-card {
+  margin: auto;
+  width: 5rem;
+  padding-top: 3rem;
+}
+.card-box h8 {
+  margin-top: 5px;
+}
+.card-box p {
+  padding-top: 15px;
+  color: #999999;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 8px 8px #999999;
+}
+
+.little-dot {
+  height: 5vw;
+  justify-content: center;
+  align-items: center;
+}
+.little-dot .dot {
+  width: 10px;
+  height: 10px;
+  background: #ECECEC;
+  border-radius: 50px;
+  margin: 2px;
+}
+.little-dot .dot :hover {
+  background-color: #29b078;
+}
+
+.enterprise {
+  height: 150px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.enterprise:hover {
+  box-shadow: 0 0 2px 3px #a3a3a3;
+}
+
+.friendly-link {
+  height: 10vw;
+  justify-content: center;
+}
+
+.main-link {
+  text-align: center;
+  justify-content: space-between;
+  color: #b3b3b3;
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 0px 10px 10px 10px;
+}
+.main-link span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  list-style-type: disc;
+}
+.main-link span :hover {
+  text-decoration: underline #26a26f;
+}
+.main-link span li {
+  list-style-type: disc;
+}
+
+@media screen and (max-width: 1280px) {
+  .main-people {
+    border-left: 1px dashed #fff;
+  }
+}
+.nav-head {
+  background-color: #26a26f;
+}
+
+@media screen and (min-width: 780px) {
+  .nav-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+#nav-menu {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  #menu {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 780px) {
+  #nav-menu:checked ~ .list {
+    display: block;
+  }
+}
+#nav-menu-control {
+  display: block;
+  font-family: Courier New;
+  width: 5rem;
+  font-size: 4em;
+  line-height: 3rem;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.list {
+  text-align: center;
+  padding: 0;
+}
+
+@media screen and (max-width: 780px) {
+  .list {
+    display: none;
+  }
+}
+@media screen and (min-width: 780px) {
+  .list {
+    display: flex;
+    margin: 0;
+  }
+}
+.nav-link {
+  text-decoration: none;
+  line-height: 60px;
+}
+
+.list-item {
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  padding: 0 10px;
+  list-style: none;
+}
+
+.list-item:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/*# sourceMappingURL=task14-1.css.map */

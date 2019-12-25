@@ -1,0 +1,116 @@
+*, *::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navigation-color {
+  background-color: #26a26f;
+}
+
+.photo {
+  width: 100%;
+}
+
+.home-page {
+  height: 80px;
+  align-content: center;
+}
+.home-page a {
+  color: #26a26f;
+}
+
+.cooperative-enterprise {
+  margin: 0;
+  text-align: center;
+}
+.cooperative-enterprise .main-border {
+  border: 1px solid #dddddd;
+  padding: 0;
+}
+
+.recommend {
+  border-top: 1px solid #dddddd;
+  justify-content: center;
+}
+
+.S-W {
+  padding-left: 0;
+}
+
+.name {
+  padding-top: 20px;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid #fe6712;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.colour {
+  color: #26a26f;
+  text-decoration: none;
+}
+
+/*.item-three:hover{*/
+/*background-color: #fe6712;*/
+/*}*/
+/*.d-box:hover{*/
+/*color: #fe6712;*/
+/*text-decoration: none;*/
+/*}*/
+li:hover .box {
+  background-color: #fe6712;
+}
+
+li:hover .colour {
+  color: #fe6712;
+  text-decoration: none;
+}
+
+.main-box {
+  max-width: 65px;
+}
+
+.m-border {
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.main-tudou {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dddddd;
+  margin: 0;
+}
+
+.main-photo {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-time {
+  color: #b3b3b3;
+  font-size: 13px;
+}
+
+.introduced {
+  font-size: 13px;
+  color: #b3b3b3;
+  padding: 30px 70px 20px 70px;
+}
+
+.box-yeyeye {
+  height: 10vw;
+}
+
+/*# sourceMappingURL=task14-3.css.map */

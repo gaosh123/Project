@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.viewport {
+  /*position: relative;*/
+  overflow: hidden;
+}
+.wrap {
+  position: relative;
+  width: 300vw;
+  overflow: hidden;
+  animation: carousel linear 5s infinite 0s normal;
+}
+.wrap img {
+  display: inline-block;
+  width: 100vw;
+  height: auto;
+  float: left;
+}
+@keyframes carousel {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -0vw;
+  }
+  40% {
+    left: -100vw;
+  }
+  60% {
+    left: -100vw;
+  }
+  80% {
+    left: -200vw;
+  }
+  100% {
+    left: -200vw;
+  }
+}
