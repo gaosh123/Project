@@ -86,8 +86,9 @@ main {
 
 .box {
   width: 25%;
-  height: 35vw;
+  height: 40vw;
   max-height: 270px;
+  margin-bottom: 15px;
 }
 
 .white-box {
