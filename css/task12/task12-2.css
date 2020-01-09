@@ -30,6 +30,7 @@ header .top .one .span-left {
   background-color: #55a8b3;
   border-radius: 8px;
   color: white;
+  margin-left: 40px;
 }
 header .top .one .span-right {
   padding: 13px 19px;
@@ -104,6 +105,7 @@ main .table .table-one-center {
   background: url("img/right.jpg") no-repeat;
   background-position-x: right;
   background-position-y: center;
+  margin-left: 10px;
 }
 main .table .table-one-bottom {
   line-height: 45px;
