@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>葡萄藤PPT</title>
+
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+
+    <style>
+        .float {
+            float: left;
+        }
+
+        p.font {
+            text-align: left;
+        }
+    </style>
+
+
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ?
+            'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' : '../css/reveal/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <link rel="stylesheet" href="csstask.css">
+</head>
+
+<body>
+<img src="img/2018-11-16-A-css01/logo.png" alt="" usemap="#pttmap" class="base-logo" style="visibility: hidden">
+<map name="pttmap">
+    <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com/" alt="" target="_blank">
+</map>
+<div class="reveal slide center" role="application" data-transition-speed="default" data-background-transition="fade">
+            <div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.794571);">
+                <section class="present" style="top: 234px; display: block;">
+                    <h2>【JS-task-1】 </h2>
+                    <h4>JS有哪些数据类型和常用方法？</h4>
+                    <p style="text-align: center;">分享人：高世豪</p>
+                </section>
+                <section class="future" style="top: 3px; display: block;" hidden="" aria-hidden="true">
+                    <p>目录</p>
+                    <p>1. 背景介绍</p>
+                    <p>2. 知识剖析</p>
+                    <p>3. 常见问题</p>
+                    <p>4. 解决方案</p>
+                    <p>5. 扩展思考</p>
+                    <p>6. 参考文献</p>
+                    <p>7. 更多讨论</p>
+                </section>
+                <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                    <h3>一、背景介绍</h3>
+                </section>
+                <section class="future" style="top: 190px; display: none;" hidden="" aria-hidden="true">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;先了解一下 JavaScript 是什么</p>
+
+                     <p>   JavaScript是一种属于网络的脚本语言,已经被广泛用于Web应用开发,常用来为网页添加各式各样的动态功能,为用户提供更流畅美观的浏览效果。JavaScript可以嵌入在 HTML 中，或者作为单独的文件被 HTML 引用，用以实现某种动态的功能。
+                     </p>
+
+
+                </section>
+                <section>
+                    <p>JavaScript数据类型</p>
+                       <p> “数据类型”在数据结构中的定义“一个值的集合以及定义在这个值集上的一组操作”。在编程语言中，能够表示并操作的值的类型称做数据类型。
+
+                        简单的说就是物以类聚。
+
+                        最新的 ECMAScript 标准定义了 7 种数据类型分别为:字符串、数字、布尔值、对象、Null、Undefined、Symbol。
+
+
+                       </p>
+
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>二、知识剖析</h3>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                  <p>JavaScript常见的数据类型</p>
+                </section>
+                <section>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.数值（number）</p>
+<p>有两种形式，第一种是整数，第二种为浮点数（数值中必须含小数点，且小数点后至少有一位数字。）
+                   </p>
+                    <p>
+                        var x=34.00; //使用小数点来写</p>
+<p>
+                        var x=34; //不使用小数点来写
+</p>
+    <p>                    极大或极小的数字可以通过科学（指数）计数法来书写：
+                    </p>
+                    <p>var y=123e5; // 12300000</p>
+                    <p>var z=123e-5; // 0.00123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var w=y+z</p>
+                    <p>document.write(y +" ");</p>
+                    <p>document.write(z +" ");</p>
+                    <p>document.write(w +" ");</p>
+                </section>
+                <section>遵循IEEE 754标准（浮点数算术标准），JavaScript所能表示的数值范围为正负1.7976931348623157乘以10的308次方，其最小所能表示的小数为5e-324正负5乘以10的负324次方，这两个边界值可以分别通过访问Number对象的Number.MAX_VALUE属性和Number.MIN_VALUE属性来获取。
+
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <p>2.字符串（string）</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        字符组成的文本（比如”Hello World”），0或多个16位Unicode字符组成的字符序列。字符串常量首尾由单引号或双引号括起。
+                    </p>
+                </section>
+               <section>
+                   <p>var dawa="小伙伴们晚上好!";  </p>
+                   <p>var dawa1="其实是一样的'123'"; //双引号包含单引号</p>
+                   <p>var dawa2='其实是一样的 "123"'; //单引号包含双引号</p>
+                   <p>document.write(dawa +" ");</p>
+                   <p>document.write(dawa1 +" ");</p>
+                   <p>document.write(dawa2 +" ");</p>
+
+               </section>
+                <section>
+                    <p>3.布尔值（Boolean）</p>
+                <p>布尔值代表“真”和“假”两个状态。“真”用关键字true表示，“假”用关键字false表示。布尔值只有这两个值。转换规则是除了下面几个值被转为false，其他值都视为true。</p>
+                    <p>Boolean(undefined) // false</p>
+                    <p>Boolean(null) // false</p>
+                    <p>Boolean(0) // false</p>
+                    <p>Boolean(NaN) // false</p>
+                    <p>Boolean('') // false</p>
+
+                </section>
+                <section><p>4.undefined</p>
+                    <p>Undefined类型只有一个值，即特殊的undefined。使用var声明变量但未对其初始化时，这个变量的值就是undefined.</p>
+<p>一个没有被赋值的变量会有个默认值 undefined。</p>
+                    <p>var dawa;</p>
+<p> document.write(dawa);</p>
+                </section>
+<section>
+    <p>5.null</p>
+    <p>null 表示空缺。null 数据类型在 JavaScript 中仅具有一个值：null。null 关键字不能用作函数或变量的名称。null用来表示空值，即没有对象被呈现，可以通过将变量的值设置为 null 来清空变量：</p>
+    <p>var car="dawa"; //把字符串dawa赋值给变量car </p>
+    <p>document.write(car + " "); //输出变量car，应该显示dawa</p>
+    <p>var car=null; //把null赋值给变量car</p>
+    <p>document.write(car + " "); //输出变量car，应该显示null</p>
+</section>
+    <section>
+    <p>null === undefined // false</p>
+    <p>null  == undefined // true</p>
+    <p>null === null // true</p>
+    <p>null == null // true</p>
+    <p>NaN == NaN;    //false</p>
+    <p>NaN === NaN;    //false</p>
+    <p>NaN是JavaScript之中唯一不等于自身的值，不等于任何值，包括它本身。</p>
+
+</section>
+<section>
+    <p>6.对象（object）</p>
+    <p>对象：各种值组成的集合。Object数据类型，称为对象，是一组数据和功能（函数）的集合。可以用new操作符后跟要创建的对象类型的名称来创建</p>
+    <p>person=new Object();</p>
+    <p>person.dawa="开开";</p>
+    <p>person.erwa="胖";</p>
+    <p>person.age=123;</p>
+    <p>person.color="自行想象";</p>
+    <p>document.write(person.dawa + " 和 " + person.erwa + person.age + person.color)</p>
+</section>
+<section>
+    <p>7.数组</p>
+    <p>数组用来在单独的变量名中存储一系列的值。</p>
+    <P>我们使用关键词 new 来创建数组对象或字面量语法来创建数组。下面的代码定义了一个名为 mycars 的数组对象：</P>
+    <P>var mycars = new Array()  //定义一个名mycars的数组 </P>
+<p>mycars[0] = "Saab"      //数组第一个值为saab</p>
+<p>mycars[1] = "Volvo" </p>
+<p>mycars[2] = "BMW"</p>
+<p>for (i=0;i")
+    }</p>
+
+</section>
+                <section>
+                    <p>8.函数</p>
+                    <p>函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。</p>
+                    <p>JavaScript 函数语法</p>
+                    <p>函数是由这样的方式进行声明的：关键字 function、函数名、一组参数，以及置于括号中的待执行代码。</p>
+                    <p>function myFunction()
+
+                        {
+
+                        alert("Hello World!");
+
+                        }</p>
+                    <p>myFunction();</p>
+                </section>
+                <section>
+                    <p>9.Symbol</p>
+                    <p>Symbol 是一种特殊的、不可变的数据类型。</p>
+                    <p>Symbol值通过Symbol函数生成。</p>
+                    <p>var s = Symbol（）;</p>
+                    <p>typeof s</p>
+                    <p>
+                        "Symbol"</p>
+                </section>
+                <section>
+                    <h3>三、常见问题</h3>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <p>如何判断数据类型</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>四、解决方案</h3>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <p>typeof可以解决大部分的数据类型判断，typeof运算符可以返回一个值的数据类型，。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+               <p>var a="string"; console.log(typeof a); //string</p>
+                  <p>var a=1; console.log(typeof a); //number</p>
+                    <p>var a=false; console.log(typeof a); //boolean</p>
+                    <p>var a; console.log(typeof a); //undfined</p>
+                    <p>var a = null; console.log(typeof a); //object</p>
+                    <p>var a = document; console.log(typeof a); //object</p>
+                    <p>var a = []; console.log(a); //object</p>
+                    <p>var a = function(){}; console.log(typeof a) //function 除了可以判断数据类型还可以判断函数类型</p>
+                </section>
+<section>
+    <p>那如何判断数据是个数组类型？</p>
+    <p>js判断数组类型的方法(这里只说一种最简单的方法)：</p>
+    <p>instanceof 用于判断一个变量是否是某个对象的实例。</p>
+<p>比如Array：
+
+    var a=[];</p>
+    <p>console.log(a instanceof Array) //返回true</p>
+
+</section>
+
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>五、拓展思考</h3>
+                </section>
+                <section class="future" style="top: 178px; display: none;" hidden="" aria-hidden="true">
+                    <p>javascript数据类型转换</p>
+                    <p>JavaScript是一种动态类型语言，变量没有类型限制，可以随时赋予任意值。</p>
+                    <p>虽然变量没有类型，但是数据本身和各种运算符是有类型的。如果运算符发现，数据的类型与预期不符，就会自动转换类型。</p>
+                    <p>详细参考：数据类型转换详解</p>
+                </section>
+
+
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                <h3>六、参考文献</h3>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <p>《JavaScript高级程序设计》</p>
+                    <p>JavaScript标准参考教程（阮一峰著）</p>
+                    <p>W3School JavaScript教程</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>七、更多讨论</h3>
+                    <p>大家课后有兴趣就自己查看ES6新增类型Symbol的使用</p>
+                </section>
+                <section class="future" style="top: 202.5px; display: none;" hidden="" aria-hidden="true">
+                    <h3>感谢观看</h3>
+                </section>
+            </div>
+        <div class="backgrounds"><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left" aria-label="previous slide"></button><button class="navigate-right enabled" aria-label="next slide"></button><button class="navigate-up" aria-label="above slide"></button><button class="navigate-down" aria-label="below slide"></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe=""></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+
+    分享人：高世豪
+                </div></div>
+<script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+<script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+                history: true,
+                dependencies: [{
+                    src: 'https://ptteng.github.io/PPT/plugin/markdown/marked.js'
+                },
+                    {
+                        src: 'https://ptteng.github.io/PPT/plugin/markdown/markdown.js'
+                    },
+                    {
+                        src: 'https://ptteng.github.io/PPT/plugin/notes/notes.js',
+                        async: true
+                    },
+                    {
+                        src: 'https://ptteng.github.io/PPT/plugin/highlight/highlight.js',
+                        async: true,
+                        callback: function () {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    }
+                ]
+            });
+        </script>
+
+    </body></html>
